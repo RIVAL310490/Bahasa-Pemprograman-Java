@@ -23,6 +23,7 @@ public class Object {
         System.out.println(person1.name);
         System.out.println(person1.address);
         System.out.println(person1.country);
+        person1.sayHello("Khan"); //pemanggilan method 
         Person person2 = new Person(); // new Person() itu yang membuat objek di memori
         person2.name = "\nRifan";
         person2.address = "Cahaya Street";
