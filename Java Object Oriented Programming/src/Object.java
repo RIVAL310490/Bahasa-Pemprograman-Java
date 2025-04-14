@@ -9,6 +9,7 @@ public class Object {
         /**
          * kata kuncinya new
          * var person 1 = new Person ();
+         * lalu panggil person1.name = "";
          1. Kamu memanggil constructor dari class Person (yaitu Person())
          2. Lalu membuat objek baru dimemori,
          3. Dan hasil objek itu disimpan di variabel person1
@@ -17,20 +18,22 @@ public class Object {
          * Contohnya kayak kamu punya cetakan kue (class Person), terus kalau mau punya kue beneran (objek person1),
          kamu harus cetak dulu pakai adonan (new person())
          */
-        var person1 = new Person();// person1 itu hanya variabel (tempat menyimpan).
-        person1.name = "Rival";
-        person1.address = "Garuda Street";
+        // new person () awalnya error maka kita wajib untuk memasukkan dan menggunakan parameter yang sudah diisi di class sebelumnya
+        var person1 = new Person("Eko","Subang", "09121212");// person1 itu hanya variabel (tempat menyimpan).
         System.out.println(person1.name);
         System.out.println(person1.address);
         System.out.println(person1.country);
-        person1.sayHello("Khan"); //pemanggilan method 
-        Person person2 = new Person(); // new Person() itu yang membuat objek di memori
-        person2.name = "\nRifan";
-        person2.address = "Cahaya Street";
+        person1.sayHello("Rizki"); //pemanggilan method
+        // pada dasarnya menggunakan constructor akan memaksa kita untuk mengisi data sesuai yang kita tambahkan di class
+        Person person2 = new Person("Eko"); // new Person() itu yang membuat objek di memori
         System.out.println(person2.name);
         System.out.println(person2.address);
         System.out.println(person2.country);
-        Person person3 = new Person(); // jadi, person1 menyimpan alamat objek dari new Person ()
+        Person person3 = new Person();// jadi, person1 menyimpan alamat objek dari new Person ()
+        person3.address = "Satria";
+        System.out.println(person3.name);
+        System.out.println(person3.address);
+        System.out.println(person3.country);
         /*
         Person = cetakan kue,
         new Person() = bikin kue dari cetakan
