@@ -18,19 +18,19 @@ public class variableShadowing {
          final String country = "Indonesia";
 
          Person (String name, String address) {
-         name = name; // field nama tidak berubah
-         address = address; // field address tidak berubah
+         name = name; // field nama tidak berubah // variable shadowing
+         address = address; // field address tidak berubah // variable shadowing
          }
 
          Person (String name) {
-         name = name; // field nama tidak berubah
+         name = name; // field nama tidak berubah // variable shadowing
 
          void sayHello (String name) {
          sout("Hello" + name + ", My name is" + name); // field name tidak diakses
          }
 
          // Object.java
-         Person person2 = new Person (name: "rival");_
+         Person person2 = new Person (name: "rival"); // variable shadowing
          sout(person2.name)
          output: null
          */

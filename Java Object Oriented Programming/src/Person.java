@@ -27,10 +27,9 @@
      * Nama constructor harus sama dengan nama class, dan tidak membutuhkan kata kunci void atau return value
       */
 
-     Person(String paramName, String paramAddress, String paramPhone) { // ini constructor
-         name = paramName; // nama constructor harus sama dengan nama class
-         address = paramAddress;
-         numberPhone = paramPhone;
+     Person(String name, String address) { // ini constructor
+         this.name = name; // nama constructor harus sama dengan nama class
+         this.address = address;
      }
      /*
      Constructor Overloading
@@ -59,8 +58,8 @@
      this(null);
      }
       */
-     Person(String paramName ) { //constructor
-         name = paramName;
+     Person(String name ) { //constructor
+         this.name = name;
      }
      Person(){ // constructor
 
@@ -76,7 +75,7 @@
        Sama seperti mengakses field
                */
      void sayHello(String paramName) { //ini method
-         System.out.println("Hello" + paramName + ", My name is "+ name);
+         System.out.println("Hello" + paramName + ", My name is "+ this.name);
 
      }
 }
